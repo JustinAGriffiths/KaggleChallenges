@@ -211,14 +211,14 @@ def addVars(df):
     pass
 
 def prep_data(df, df_test):
-    drop=df.columns.tolist()
-    drop.remove('SalePrice')
-    drop.remove('Id')
+#     drop=df.columns.tolist()
+#     drop.remove('SalePrice')
+#     drop.remove('Id')
 
-    for i in ['OverallQual', 'GrLivArea','Neighborhood','2ndFlrSF','TotalBsmtSF','1stFlrSF','BsmtFinSF1','GarageCars']: drop.remove(i)
+#     for i in ['OverallQual', 'GrLivArea','Neighborhood','2ndFlrSF','TotalBsmtSF','1stFlrSF','BsmtFinSF1','GarageCars']: drop.remove(i)
 
-    df.drop(drop, axis=1,inplace=True)
-    df_test.drop(drop, axis=1,inplace=True)
+#     df.drop(drop, axis=1,inplace=True)
+#     df_test.drop(drop, axis=1,inplace=True)
     
 
     #     #convert ints to strings
